@@ -6,6 +6,10 @@
 
 Architecture of a Database System
 
+### Study ID
+
+S001
+
 ### Authors
 
 Joseph M. Hellerstein, Michael Stonebraker, and James Hamilton
@@ -63,6 +67,10 @@ This paper supports the explanation of why database systems are important, how D
 ### Title
 
 A Relational Model of Data for Large Shared Data Banks
+
+### Study ID
+
+S003
 
 ### Author
 

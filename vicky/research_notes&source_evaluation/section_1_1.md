@@ -27,7 +27,7 @@ This file records why sources were selected or excluded, what each source can su
 - **Study ID:** S001
 - **Decision:** Selected
 - **Use:** Establish the role of DBMSs, their architectural responsibilities, and their contribution to scalability and reliability.
-- **Evidence recorded:** E001–E002
+- **Evidence recorded:** E001–E003
 - **Limitation:** Broad architectural coverage from 2007; not specific to MongoDB.
 
 ## Selected source: A Relational Model of Data for Large Shared Data Banks
@@ -41,7 +41,7 @@ This file records why sources were selected or excluded, what each source can su
 - **Study ID:** S003
 - **Decision:** Selected
 - **Use:** Explain the relational model, data independence, redundancy, and consistency in the historical development of database systems.
-- **Evidence recorded:** E003
+- **Evidence recorded:** E004
 - **Limitation:** Foundational historical source; it does not cover NoSQL or modern distributed systems.
 
 ## Search guidance
