@@ -399,4 +399,228 @@ your data models, it forces more schema based design
 decisions on the app logic than the db. Without the
 schema in place, the rules and regulations of your data
 models are dictated by your app logic rather than the db
-itself. 
+itself.
+
+## Source 3
+
+### Title
+
+A Comparative Analysis of NoSQL and SQL Databases: Performance, Consistency, and Suitability for Modern Applications with a Focus on IoT
+
+### Study ID
+
+S014
+
+### Authors
+
+Sanda Rashid Salim Al Maamari and Mohammad Nasar
+
+### Published
+
+2025
+
+### Venue
+
+East Journal of Computer Science, vol. 1, issue 2
+
+### DOI and source link
+
+- DOI: https://doi.org/10.63496/ejcs.Vol1.Iss2.76
+- Source: https://eastpublication.com/index.php/ejcs/article/view/76/34
+- PDF: https://eastpublication.com/index.php/ejcs/article/download/76/34/296
+
+### Source type
+
+Comparative review and benchmark study
+
+### Short source excerpts
+
+- “This article gathers insights from recent studies to offer a thorough comparison of NoSQL and SQL databases.”
+- “This work aims to guide effective database selection in today’s data-driven world.”
+
+### Exact source headings relevant to this review
+
+- `Abstract`
+- `1. Introduction`
+- `2. Related Work`
+- `3. Methodology`
+- `4. Result Discussion`
+- `4.1 Performance Comparison`
+- `4.2 Consistency Analysis`
+- `4.3 IoT Implementation Evaluation`
+- `Implications and Gaps`
+- `5. Discussion and Conclusion`
+
+### Exact scope areas stated by the source
+
+- `Performance`
+- `Consistency models`
+- `Suitability for modern applications`
+- `Internet of Things (IoT)`
+- `Big data`
+- `Distributed systems`
+
+### Research questions stated by the source
+
+- How do NoSQL databases compare to SQL in speed, scalability, and throughput?
+- What are the practical effects of their consistency models?
+- Which systems best meet IoT and other emerging needs?
+
+### Relevant content for Section 1.3
+
+The study frames database comparison around performance, consistency, and application suitability. It gives particular attention to IoT, big-data, and distributed workloads. This can support a final introductory paragraph that explains why the MongoDB review considers both technical capabilities and workload-specific trade-offs.
+
+### Relevant content for later sections
+
+- Section 2: review methodology, benchmark selection, workload description, and consistency criteria.
+- Section 4: throughput, latency, scalability, and consistency trade-offs.
+- Section 5: IoT, time-series, distributed, and other application requirements.
+- Section 6: SQL and NoSQL comparison under defined workloads.
+- Section 7: dynamic benchmarking, security, energy efficiency, spatial-temporal IoT requirements, and edge-cloud synchronization.
+
+## Source 4
+
+### Title
+
+SQL and NoSQL Database Software Architecture Performance Analysis and Assessments—A Systematic Literature Review
+
+### Study ID
+
+S015
+
+### Authors
+
+Wisal Khan, Teerath Kumar, Cheng Zhang, Kislay Raj, Arunabha M. Roy, and Bin Luo
+
+### Published
+
+2023
+
+### Venue
+
+Big Data and Cognitive Computing, vol. 7, no. 2, article 97
+
+### DOI and source link
+
+- DOI: https://doi.org/10.3390/bdcc7020097
+- Source: https://www.mdpi.com/2504-2289/7/2/97
+
+### Source type
+
+Systematic literature review
+
+### Short source excerpt
+
+“The purpose of this SLR is to examine the articles that address cloud data portability and interoperability.”
+
+### Exact source headings relevant to this review
+
+- `Abstract`
+- `1. Introduction`
+- `1.1. State of the Problem`
+- `1.2. Method`
+- `2. Objectives and Research Questions`
+- `2.1. Search Criteria`
+- `2.1.2. Search Strategy`
+- `2.2. Selection Process and Criteria`
+- `2.4. Data Analysis and Classification`
+
+### Exact research questions stated by the source
+
+- Considering big data, including structured and unstructured data: What is the need for NoSQL?
+- Why does the NoSQL database follow the BASE property instead of the SQL database ACID property?
+- Does DBaaS tackle data interoperability and portability efficiently in various NoSQL databases?
+
+### Relevant content for Section 1.3
+
+This systematic review shows how a database review can state a defined purpose, formulate research questions, describe a search and selection process, classify extracted evidence, and identify research gaps. Its subject is broader than MongoDB, so its questions should inform our framing rather than be copied as our own questions.
+
+### Relevant content for later sections
+
+- Section 2: search criteria, search strings, inclusion and exclusion criteria, selection process, data extraction, and classification.
+- Section 4: software architecture, scalability, performance, availability, consistency, and sharding.
+- Section 6: SQL and NoSQL comparison, ACID and BASE, and MongoDB versus relational systems.
+- Section 7: interoperability, portability, security, research gaps, and future directions.
+
+## Additional drafting boundary
+
+S014 and S015 can support the final paragraph of Section 1.3, where the review purpose, comparison dimensions, and research questions are stated. Their numerical benchmark results should not be copied into the introduction. Those results belong in the comparative analysis only after the workload, configuration, and limitations have been checked.
+
+## Source 5
+
+### Title
+
+A Comparative Study of NoSQL Databases: MongoDB, HBase, and Phoenix
+
+### Study ID
+
+S016
+
+### Authors and publication
+
+- Authors: Er. Shanmukha Eeti, Er. Apoorva Jain, and Prof. (Dr.) Punit Goel
+- Year: 2023
+- Venue: *International Journal of Novel Trends and Innovation*, vol. 1, issue 12
+- Source type: Comparative study
+- DOI: Not shown
+- Source: https://rjpn.org/ijnti/papers/IJNTI2312013.pdf
+
+### Useful source content
+
+The abstract and introduction explain that the growth of large, diverse, and dynamic data exposed limits in rigid relational designs and encouraged NoSQL systems. The paper places MongoDB, HBase, and Phoenix in different NoSQL roles: MongoDB uses flexible JSON-like BSON documents; HBase uses a column-family model over HDFS; and Phoenix provides a SQL layer over HBase. The paper therefore treats database choice as a trade-off rather than as a universal ranking.
+
+The relevant comparison headings are `Data Model Flexibility`, `Scalability`, `Performance`, `Consistency`, `Ease of Use`, and `Integration`. Its MongoDB section discusses dynamic schemas, ad-hoc queries, indexing, aggregation, geospatial queries, replication, and sharding. It also notes that workload and consistency requirements affect whether a system is appropriate.
+
+The paper identifies gaps involving broader real-world benchmarks, migration from relational systems, AI/ML effects, and cloud-versus-on-premises cost comparisons. Its methodology names YCSB and TPC-H and measures latency, throughput, scalability, consistency, and ease of use. These methodological details are useful for planning later comparisons, but the reported benchmark values should not be copied without checking the workload, hardware, versions, and experimental setup.
+
+### Exact headings and evidence locations
+
+- `Abstract` and `Introduction`, pp. 1–2: motivation for NoSQL and the three database roles.
+- `MongoDB: Document-Oriented Database`, p. 3: BSON, flexible schemas, queries, indexing, replication, and sharding.
+- `Comparative Analysis`, p. 4: six comparison dimensions.
+- `Research Gap`, p. 6: benchmark, migration, AI/ML, and cost gaps.
+- `Research Methodology`, p. 7: datasets, metrics, and test design.
+- `Results`, pp. 7–9: reported comparison tables; use only after validation.
+
+### Short source excerpt
+
+“NoSQL databases have emerged as a solution to these challenges.”
+
+## Source 6
+
+### Title
+
+MongoDB – a comparison with NoSQL databases
+
+### Study ID
+
+S017
+
+### Authors and publication
+
+- Authors: Hema Krishnan, M. Sudheep Elayidom, and T. Santhanakrishnan
+- Year: 2016
+- Venue: *International Journal of Scientific and Engineering Research*, vol. 7, issue 5, pp. 1035–1037
+- Source type: Short comparative review
+- DOI: Not shown
+- Source: https://www.researchgate.net/publication/327120267_MongoDB_-_a_comparison_with_NoSQL_databases
+
+### Useful source content
+
+The abstract and introduction connect changing web-application data requirements with the development of NoSQL systems. The article classifies NoSQL into key-value, column-family, document, and graph models. It presents MongoDB as a document-oriented system using BSON, with indexing, replication, sharding, high read/write throughput, and automatic failover. It also discusses unstructured data and the reduced need for costly schema migrations.
+
+These sections are useful for terminology and historical background, especially when introducing MongoDB’s document model and the main NoSQL categories. Its broad comparisons should be supported by stronger primary or official sources before being used as evidence for performance or superiority.
+
+### Exact headings and evidence locations
+
+- `1 INTRODUCTION`, pp. 1035–1036: changing requirements and NoSQL motivation.
+- `2. DATA MODELS` and `2.2 No SQL Data Models`, pp. 1035–1036: key-value, column-family, document, and graph models.
+- `3 MONGODB`, p. 1036: BSON, indexing, replication, sharding, failover, and document storage.
+
+### Short source excerpt
+
+“MongoDB is a document based NoSQL database designed for Internet and web based applications.”
+
+### Drafting boundary
+
+S016 is most useful for comparison dimensions, MongoDB–HBase–Phoenix context, and research-gap themes. S017 is most useful for NoSQL model classification and early MongoDB terminology. Neither source should be the sole authority for precise current MongoDB behavior or performance.
