@@ -1,0 +1,60 @@
+Use : Think of a MongoDB replica set like a group of clerks keeping identical copies of a business ledger so that if one clerk gets sick, the business keeps running without missing a beat.
+
+1. The Team (Replica Sets)
+
+Instead of relying on just one computer, MongoDB uses a group of computers called nodes. They work as a team to make sure your data is always available. Every computer in this group holds an exact copy of the same database.
+
+2. The Boss and the Assistants (Primary vs. Secondaries)
+
+• The Boss (Primary Node): There is only ever one boss at a time. When a user wants to change data (write or delete something), they must talk to the boss.
+• The Assistants (Secondary Nodes): The other computers just watch the boss and copy everything the boss does. If the boss crashes, the assistants quickly vote to elect a new boss from among themselves.
+
+3. The To-Do List (The Oplog)
+
+When the boss makes a change, they don't just update the database; they also write down exactly what they did in a special, ongoing diary called the oplog (operations log).
+• It is a "do this" list, not an "undo" list. It says "Change User A's age to 30", but it doesn't remember what the old age was.
+• Every task gets a precise time stamp so the assistants know exactly what order to do them in.
+• It works like a conveyor belt: once the diary gets too full, the oldest pages are thrown away to make room for new ones.
+
+4. How the Assistants Copy the Boss (Pull-Based Replication)
+
+In some systems, the boss forcefully pushes instructions to the workers. MongoDB does the opposite:
+• It is pull-based. The assistants are proactive. They constantly check in with the boss (or even another advanced assistant) and ask, "Hey, what did I miss? Give me the latest tasks."
+
+5. Acting First, Asking Questions Later (Speculative Execution)
+
+The text mentions that assistants apply changes "speculatively."
+• This means as soon as an assistant gets a task from the diary, they do it immediately.
+• They do not wait around for the rest of the team to agree that the task is safe. They just blindly copy it right away to keep up. (The downside, which the text hints at, is that if the boss suddenly crashes before everyone agrees on a change, the assistants might have to roll back and erase those unconfirmed tasks).
+
+
+Clients interact with a replica set through a driver, which is a client library
+that implements a standard specification for how to properly communicate with and monitor the health of a replica
+set [10]. Internally, a driver communicates with nodes of a
+replica set through an RPC like protocol that sends data in
+BSON format. For horizontal scaling, MongoDB also offers
+sharding, which allows users to partition their data across
+multiple replica sets. The details of sharding will not be
+discussed in this paper.
+
+
+{
+// The oplog entry timestamp.
+"ts": Timestamp(1518036537, 2),
+// The term of this entry.
+"t": NumberLong("1"),
+// The operation type.
+"op": "i",
+// The collection name.
+"ns": "test.collection",
+// A unique collection identifier.
+"ui": UUID("c22f2fe6...")),
+// The document to insert.
+"o":{
+"_id": ObjectId("5a7b6639176928f52231db8d"),
+"x": 1
+}
+}
+Figure 1: Example of key oplog entry fields for an
+“insert” operation
+link - https://vldb.org/pvldb/vol12/p2071-schultz.pdf?utm_source=chatgpt.com
