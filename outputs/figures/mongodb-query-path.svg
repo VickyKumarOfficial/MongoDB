@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="520" viewBox="0 0 1600 520" role="img" aria-labelledby="title desc">
+  <title id="title">MongoDB query path</title>
+  <desc id="desc">A minimal left-to-right flow from an application and driver through the MongoDB Wire Protocol, executor and query planner, and selected execution plan to the WiredTiger storage engine, which contains indexes, cache, journal, and checkpoints.</desc>
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="8" refX="8" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L9,4 L0,8 Z" fill="#424b55" />
+    </marker>
+    <style>
+      .label { font-family: Arial, Helvetica, sans-serif; fill: #202830; }
+      .main { font-size: 24px; font-weight: 600; }
+      .sub { font-size: 18px; fill: #56616c; }
+      .box { fill: #f6f7f8; stroke: #68737e; stroke-width: 2; }
+      .inner { fill: #ffffff; stroke: #a3abb3; stroke-width: 1.5; }
+      .line { fill: none; stroke: #424b55; stroke-width: 2.5; marker-end: url(#arrow); }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1600" height="520" fill="#ffffff" />
+
+  <rect class="box" x="52" y="179" width="205" height="112" rx="5" />
+  <text class="label main" x="154.5" y="225" text-anchor="middle">Application</text>
+  <text class="label sub" x="154.5" y="257" text-anchor="middle">and driver</text>
+
+  <rect class="box" x="323" y="179" width="220" height="112" rx="5" />
+  <text class="label main" x="433" y="225" text-anchor="middle">Wire Protocol</text>
+  <text class="label sub" x="433" y="257" text-anchor="middle">request and response</text>
+
+  <rect class="box" x="609" y="165" width="245" height="140" rx="5" />
+  <text class="label main" x="731.5" y="216" text-anchor="middle">Executor and</text>
+  <text class="label main" x="731.5" y="245" text-anchor="middle">query planner</text>
+  <text class="label sub" x="731.5" y="278" text-anchor="middle">candidate plan selection</text>
+
+  <rect class="box" x="920" y="179" width="220" height="112" rx="5" />
+  <text class="label main" x="1030" y="225" text-anchor="middle">Selected</text>
+  <text class="label sub" x="1030" y="257" text-anchor="middle">execution plan</text>
+
+  <rect class="box" x="1206" y="91" width="342" height="302" rx="5" />
+  <text class="label main" x="1377" y="135" text-anchor="middle">WiredTiger storage engine</text>
+  <rect class="inner" x="1232" y="164" width="132" height="76" rx="4" />
+  <text class="label main" x="1298" y="210" text-anchor="middle">Indexes</text>
+  <rect class="inner" x="1388" y="164" width="132" height="76" rx="4" />
+  <text class="label main" x="1454" y="210" text-anchor="middle">Cache</text>
+  <rect class="inner" x="1232" y="267" width="132" height="76" rx="4" />
+  <text class="label main" x="1298" y="313" text-anchor="middle">Journal</text>
+  <rect class="inner" x="1388" y="267" width="132" height="76" rx="4" />
+  <text class="label main" x="1454" y="313" text-anchor="middle">Checkpoints</text>
+
+  <path class="line" d="M257 235 H310" />
+  <path class="line" d="M543 235 H596" />
+  <path class="line" d="M854 235 H907" />
+  <path class="line" d="M1140 235 H1193" />
+</svg>

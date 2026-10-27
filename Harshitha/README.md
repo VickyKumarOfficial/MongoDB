@@ -1,4 +1,4 @@
-# Harshitha — Section 4 Research
+# Harshitha — Research
 
 Research files are divided by purpose, following the project workflow:
 
@@ -8,9 +8,10 @@ Research files are divided by purpose, following the project workflow:
 
 ## Current subsection
 
-Section 4.1 — Architecture, storage, and query processing
+Section 5.3 — Application domains and unsuitable workloads
 
-- Key findings: `key_findings/sec 4.1.md`
-- Source evaluation: `research_notes & source_evaluation/sec 4.1.md`
+- Key findings: `key_findings/sec 5.3.md`
+- Source evaluation: `research_notes & source_evaluation/sec 5.3.md`
 
-Only sources relevant to the subsection should be added to its notes. Record exact paper sections/pages and distinguish source descriptions from experimental findings. Do not add unsupported bibliographic details or treat version-specific results as universal.
+Section 4 notes remain in their existing files. For the current subsection, add only relevant sources; record exact paper sections/pages and distinguish source descriptions from experimental findings. Do not add unsupported bibliographic details or treat version-specific results as universal.
+
