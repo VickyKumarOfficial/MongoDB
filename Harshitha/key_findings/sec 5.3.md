@@ -180,3 +180,4 @@ Use this source for current MongoDB terminology, feature examples, and documente
 3. A. Kamsky, “Adapting TPC-C Benchmark to Measure Performance of Multi-Document Transactions in MongoDB,” *Proceedings of the VLDB Endowment*, vol. 12, no. 12, pp. 2254–2262, 2019. doi: [10.14778/3352063.3352140](https://doi.org/10.14778/3352063.3352140).
 4. MongoDB, Inc., “Identify Application Workload” and “Time Series,” *MongoDB Database Manual*, version 9.0. Available: [Identify Application Workload](https://www.mongodb.com/docs/manual/data-modeling/schema-design-process/identify-workload/) and [Time Series](https://www.mongodb.com/docs/manual/core/timeseries-collections/) (accessed October 20, 2026).
 
+.
